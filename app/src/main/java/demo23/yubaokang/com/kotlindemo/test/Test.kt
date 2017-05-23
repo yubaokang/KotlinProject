@@ -10,7 +10,6 @@ class Test {
         return a + b
     }
 
-
     fun sum2(a: Int, b: Int) {
         println("sum $a and $b is ${a + b}")
     }
@@ -28,23 +27,47 @@ class Test {
         x += 1
     }
 
-    fun maxOf(a:Int,b:Int,c:Int,d:Int):Int{
-        var max:Int=a
-        if (a<b){
-            max=b
+    fun maxOf(a: Int, b: Int, c: Int, d: Int): Int {
+        var max: Int = a
+        if (a < b) {
+            max = b
         }
-        if (max<c){
-            max=c
+        if (max < c) {
+            max = c
         }
-        if (max<d){
-            max=d
+        if (max < d) {
+            max = d
         }
         return max
     }
 
-   fun paserInt(str:String){
-       var a:Int=Integer.parseInt(str)
-       print(a)
-   }
+    fun paserInt(str: String) {
+        val a: Int = Integer.parseInt(str)
+        print(a)
+    }
+
+    fun for1() {
+        val items = listOf("aa", "bb", "cc");
+        for (item in items) {
+            println(item)
+        }
+    }
+
+    fun while1() {
+        val items = listOf(1, 2, 3, 4, 5, 6, 7);
+        var index = 0;
+        while (index < 7) {
+            println(items[index])
+            index++
+        }
+    }
+
+    fun describe(obj: Any): String = when (obj) {
+        1 -> "One"
+        2 -> "Two"
+        3 -> "Three"
+        else -> "UnKnow"
+    }
+
 
 }
