@@ -7,6 +7,7 @@
     tools:context="demo23.yubaokang.com.kotlindemo.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -14,5 +15,46 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="click"
+        android:text="Button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:onClick="click"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="click"
+        android:text="Button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="26dp" />
 
 </android.support.constraint.ConstraintLayout>
