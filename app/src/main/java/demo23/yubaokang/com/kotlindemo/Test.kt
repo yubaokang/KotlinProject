@@ -10,5 +10,4 @@ class Test {
     init {
         str1 = "哈哈哈哈"
     }
-
 }
